@@ -12,97 +12,94 @@
 </head>
 <body>
 
-
 <!--Header Part Start-->
     <header>
-
-        <!--Logo Part Start-->
-        <img src="logo2.png" height="75px" width="125px" alt="Logo" class="logo">
-        <!--Logo Part End-->
-
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Blog 
-                        <i class="fa-solid fa-caret-down fa-xs" style="color: #ffffff;"></i>
-                    </a>
-                    <ul>
-                        <li><a href="#">MusculoSkeletal Disease</a></li>
-                        <li><a href="#">Neurological Disease</a></li>
-                        <li><a href="#">Respiratory Disease</a></li>
-                        <li><a href="#">Congenital Disease</a></li>
-                        <li><a href="#">Arthritis Disease</a></li>
-                        <li><a href="#">Sports Injury</a></li>
-                        <li><a href="#">Road Traffic Accident</a></li>
-                        <li><a href="#">Women's Health Disease</a></li>
-                        <li><a href="#">Cardiovascular Disease</a></li>
-                        <li><a href="#">CardioPulmonary Disease</a></li>
-                        <li><a href="#">Regenerative Disease</a></li>
-                        <li><a href="#">Gynecological Disease</a></li>
-                    </ul>
-                </li>   
-                <li><a href="#">Services</a></li>
-            </ul>
-        </nav>
-    
+<!--Navigation Bar Start-->
+        <nav id="navigation">
+<!--Logo Part Start-->
+            <div class="logo">
+                <img src="logo2.png" height="50px" width="100px" alt="Logo">
+            </div>
+<!--Logo Part End-->
+<!--Menu Part Start-->
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog <i class="fa-solid fa-caret-down fa-xs" style="color: #ffffff;"></i></a>
+                        <ul class="dropdownMenu">
+                            <li><a href="#">MusculoSkeletal Disease</a></li>
+                            <li><a href="#">Neurological Disease</a></li>
+                            <li><a href="#">Respiratory Disease</a></li>
+                            <li><a href="#">Congenital Disease</a></li>
+                            <li><a href="#">Arthritis Disease</a></li>
+                            <li><a href="#">Sports Injury</a></li>
+                            <li><a href="#">Road Traffic Accident</a></li>
+                            <li><a href="#">Women's Health Disease</a></li>
+                            <li><a href="#">Cardiovascular Disease</a></li>
+                            <li><a href="#">CardioPulmonary Disease</a></li>
+                            <li><a href="#">Regenerative Disease</a></li>
+                            <li><a href="#">Gynecological Disease</a></li>
+                        </ul>
+                    </li>   
+                    <li><a href="#">Services <i class="fa-solid fa-caret-down fa-xs" style="color: #ffffff;"></i></a>
+                        <ul class="dropdownMenu">
+                            <li><a href="#">Physiotherapy</a></li>
+                            <li><a href="#">Speech Therapy</a></li>
+                            <li><a href="#">Occupational Therapy</a></li>
+                            <li><a href="#">Home Physio</a></li>
+                        </ul>
+                    </li>
+                </ul>
+<!--Menu Part End-->
+<!--Dark Mode Toggle Button Start-->
         <div class="dark-mode-toggle">
             <input type="checkbox" id="dark-mode-toggle">
         </div>
-        
+<!--Dark Mode Toggle Button End-->
+<!--Contact Button Start-->
         <a class="cont" href="#"><button>Contact</button></a>
+<!--Contact Button End-->
+        </nav>
+<!--Navigation Bar End-->
+<!--Hero Area Start-->
+    <div class="hero-area">
+        <div class="intro">
+            <h1>Welcome to our Website</h1>
 
-        <div>
-            
-        </div>
-
-    </header>
-<!--Header Part End-->
-
-
-
-<!--Main Part 1 Start-->
-<div class="intro">
-    <table height="500px" width="100%">
-        <tr>
-            <td height="100%" width="40%">
-                <div class="intro1">
-                    <img src="pp.png" alt="Profile Picture" width="70%">
-                    <h1>Hasibur Rahman</h1>
-                    <h2>Physiotherapist</h2>
-                </div>
-            </td>
-            <td height="100%" width="60%">
-                <div class="container">
-                    <div class="content-section">
-                        <div class="card">
-                            <img src="lbp1.png" alt="">
-                            <h2>MusculoSkeletal</h2>
-                            <p>Physiotherapy</p>
-                        </div>
-                        <div class="card">
-                            <img src="neuro.png" alt="">
-                            <h2>Neurological</h2>
-                            <p>Physiotherapy</p>
-                        </div>
-                        <div class="card">
-                            <img src="ex.png" alt="">
-                            <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sports&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
-                            <p>Physiotherapy</p>
-                        </div>
-                        <div class="card">
-                            <img src="women.png" alt="">
-                            <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Women&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
-                            <p>Physiotherapy</p>
-                        </div>
+            <div class="container">
+                <div class="content-section">
+                    <div class="intro1">
+                        <img src="pp.png" alt="Profile Picture" width="70%">
+                        <h1>Hasibur Rahman</h1>
+                        <h2>Physiotherapist</h2>
+                    </div>
+                    <div class="card">
+                        <img src="lbp1.png" alt="">
+                        <h2>MusculoSkeletal</h2>
+                        <p>Physiotherapy</p>
+                    </div>
+                    <div class="card">
+                        <img src="neuro.png" alt="">
+                        <h2>Neurological</h2>
+                        <p>Physiotherapy</p>
+                    </div>
+                    <div class="card">
+                        <img src="ex.png" alt="">
+                        <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sports&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+                        <p>Physiotherapy</p>
+                    </div>
+                    <div class="card">
+                        <img src="women.png" alt="">
+                        <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Women&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+                        <p>Physiotherapy</p>
                     </div>
                 </div>
-            </td>
-        </tr>
-    </table>
-</div>
-<!--Main Part 1 End-->
-
+            </div>
+        </div>
+    </div>
+<!--Hero Area End-->
+    </header>
+<!--Header Part End-->
 
 
 

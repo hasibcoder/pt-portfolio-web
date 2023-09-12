@@ -3,79 +3,111 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
 }
-li, a, button {
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: white;
-    text-decoration: none;
-}
-header {
+
+#navigation{
+    background-color: black;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 5px 10px;
-    background-color: black;
     border-bottom: 1px solid tomato;
 }
+
 .logo{
-    cursor: pointer;
     margin-right: auto;
-    transition: all 0.3s ease 0s;
+    padding: 5px;
+    transition: 0.5s;
 }
 .logo:hover{
-    margin-left: 10px;
+    margin-left: 20px;
 }
-nav {
+
+#navigation > ul{
+    display: flex;
+}
+
+#navigation > ul > li{
     list-style: none;
 }
-nav li {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 20px 0px;
-    position: relative;
-    list-style: none;
-}
-nav li a {
-    padding: 10px 0px;
+
+#navigation > ul > li > a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    border-left: 1px solid tomato;
+    padding: 0px 25px;
     transition: all 0.3s ease 0s;
 }
-nav li a:hover {
+#navigation > ul > li:first-child > a{
+    border-left: 0px;
+}
+#navigation > ul > li >a:hover{
     color: tomato;
 }
-nav ul ul{
+
+/* Dropdown Navigation Start */
+.dropdownMenu{
+    opacity: 0;
+    visibility: hidden;
+    margin-top: 20px;
     position: absolute;
-    top: 30px;
-    right: -80px;
-    display: none;
+    transition: 0.5s;
+    margin-left: -55px;
+    transform: scaleY(0);
+    transform-origin: top center;
 }
-nav ul li:hover > ul{
-    display: block;
-}
-nav ul ul li{
-    width: 235px;
-    float: none;
-    display: list-item;
-    position: relative;
-    margin: 2px;
+.dropdownMenu > li{
     background-color: black;
+    list-style: none;
+    padding: 10px 5px;
+    margin: 3px;
+    border: 1px solid tomato;
+    transition: .5s;
 }
+.dropdownMenu > li:hover{
+    background-color: tomato;
+}
+.dropdownMenu > li > a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    padding: 5px;
+    transition: all 0.3s ease 0s;
+}
+.dropdownMenu > li > a:hover{
+    color: black;
+}
+#navigation > ul > li:hover > .dropdownMenu{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+/* Dropdown Navigation End */
+
+/* Contact Button Start */
 button{
     padding: 9px 25px;
-    background-color: tomato;
+    margin: 5px 20px;
     border: none;
     border-radius: 50px;
     cursor: pointer;
+    background-color: tomato;
+    color: white;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
     transition: all 0.3s ease 0s;
-    margin-left: 20px;
 }
 button:hover{
     background-color: white;
     color: tomato;
     font-size: 20px;
 }
+/* Contact Button End */
 
 /*Dark Mode Toggle Button Start*/
 .dark-mode-toggle {
@@ -122,6 +154,10 @@ body.dark-mode {
 
 /*Header Part End*/
 
+/*Sticky NavBar Part Start*/
+
+/*Sticky NavBar Part End*/
+
 /*Responsive Header Part Start*/
 
 /*Responsive Header Part End*/
@@ -130,12 +166,16 @@ body.dark-mode {
 .intro h1, h2{
     font-family: 'ubuntu', sans-serif;
     margin-left: 10px;
+    text-align: left;
 }
 .intro h1:hover{
     color: tomato;
 }
 .intro h2:hover{
     color: tomato;
+}
+.intro1 img{
+    margin-left: -100px;
 }
 
 .container{
@@ -157,12 +197,13 @@ body.dark-mode {
     margin: 20px;
     box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
     border: 1px dotted tomato;
-    transition: all 0.3s ease 0s;
+    transition: .5s;
     cursor: pointer;
 }
 .content-section .card:hover{
     margin-top: 10px;
     border: 1px solid tomato;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 99, 71, 0.2));
 }
 .content-section .card img{
     width: 100%;
